@@ -8,7 +8,7 @@ The program takes as input a text file, where each line is a boolean statement. 
 
 The tokens used for the lexical analyzer are as follows:
     <p>ID = [A-Z]+<p/>
-    LPAR = (
+    <p>LPAR = (<p/>
     RPAR = )
     NOT = !
     AND = /\
