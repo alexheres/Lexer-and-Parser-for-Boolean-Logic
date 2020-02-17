@@ -6,7 +6,7 @@ The program takes as input a text file, where each line is a boolean statement. 
 
 # -------- Lexer and Parser ---------
 
-The tokens used for the lexical analyzer are as follows:<br>
+The tokens used for the lexical analyzer are as follows:<br><br>
     ID = [A-Z]+ <br>
     LPAR = ( <br>
     RPAR = ) <br>
@@ -16,8 +16,8 @@ The tokens used for the lexical analyzer are as follows:<br>
     IMPLIES = ‘=>’ <br>
     IFF = ‘<=>’ <br>
     COMMA = , <br>
-
-And this is the grammar which the parser follows, where the starting variable is propositions: <br>
+<br>
+And this is the grammar which the parser follows, where the starting variable is propositions: <br><br>
     propositions -> proposition more-proposition  <br> 
     more-proposition -> , propositions | e <br>
     proposition -> atomic | compound <br>
