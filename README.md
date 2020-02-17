@@ -7,23 +7,23 @@ The program takes as input a text file, where each line is a boolean statement. 
 # -------- Lexer and Parser ---------
 
 The tokens used for the lexical analyzer are as follows:<br>
-    ID = [A-Z]+
-    LPAR = (
-    RPAR = )
-    NOT = !
-    AND = /\
-    OR = \/
-    IMPLIES = ‘=>’
-    IFF = ‘<=>’
-    COMMA = ,
+    ID = [A-Z]+ <br>
+    LPAR = ( <br>
+    RPAR = ) <br>
+    NOT = ! <br>
+    AND = /\ <br>
+    OR = \/ <br>
+    IMPLIES = ‘=>’ <br>
+    IFF = ‘<=>’ <br>
+    COMMA = , <br>
 
-And this is the grammar which the parser follows, where the starting variable is propositions:
-    propositions -> proposition more-proposition
-    more-proposition -> , propositions | e
-    proposition -> atomic | compound
-    atomic -> 0 | 1 | ID
-    compound -> atomic connective proposition | LPAR proposition RPAR | NOT proposition
-    connective -> AND | OR | IMPLIES | IFF
+And this is the grammar which the parser follows, where the starting variable is propositions: <br>
+    propositions -> proposition more-proposition  <br> 
+    more-proposition -> , propositions | e <br>
+    proposition -> atomic | compound <br>
+    atomic -> 0 | 1 | ID <br>
+    compound -> atomic connective proposition | LPAR proposition RPAR | NOT proposition <br>
+    connective -> AND | OR | IMPLIES | IFF <br>
 
 
 # -------- Program Input ---------
