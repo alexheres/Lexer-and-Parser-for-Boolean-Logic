@@ -7,7 +7,7 @@ The program takes as input a text file, where each line is a boolean statement. 
 # -------- Lexer and Parser ---------
 
 The tokens used for the lexical analyzer are as follows:
-    * ID = [A-Z]+
+    <p>ID = [A-Z]+<p/>
     LPAR = (
     RPAR = )
     NOT = !
