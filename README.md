@@ -2,7 +2,7 @@
 
 # -------- Program and Functionalities ---------
 
-The program takes as input a text file, where each line is a boolean statement. As long as the syntax is correct, the program uses the pySMT library to determine whether or not boolean statements are Satisfiable (see here for more info on Boolean Satisfiability: https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
+The program takes as input a text file, where each line is a boolean statement. The lexer converts the input into a sequence of tokens, which the parser then validates. If valid, the token sequence is then fed into an infix-to-postfix conversion algorithm, to reorder the tokens for evaluation using a stack and automatically generated code. The pySMT library is used to determine whether or not boolean statements are Satisfiable (see here for more info on Boolean Satisfiability: https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
 
 # -------- Lexer and Parser ---------
 
