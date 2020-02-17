@@ -33,8 +33,8 @@ The program prompts the user for a text file, where each line in the file is a b
 Given our tokens and grammar, the program emulates a preorder parse tree traversal to check if a given boolean statement is valid. Then,  an infix to postfix conversion algorithm is used to deduce the correct order of operations needed to accurately calculate Satisfiability.
 
 
-For example, the following can be a valid line of input:
+For example, the following can be a valid line of input: <br>
 ( P \/ Q ) , ( X => Y )
 
-Whereas the next line of input is invalid, and would produce a syntax error:
+Whereas the next line of input is invalid, and would produce a syntax error: <br>
 !Q)P!
